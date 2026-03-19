@@ -38,6 +38,10 @@ const Services = () => {
           <p className="font-body text-primary-foreground/75 text-lg max-w-2xl">
             Four areas of expertise, each delivered with the precision and rigor that defines Fermat Enterprises.
           </p>
+          <blockquote className="mt-6 border-l-2 border-accent pl-4 italic font-body text-primary-foreground/60 max-w-xl">
+            <p>"I have discovered a truly marvelous proof of this, which this margin is too narrow to contain."</p>
+            <footer className="mt-1 text-xs not-italic text-primary-foreground/40">— Pierre de Fermat, 1637</footer>
+          </blockquote>
         </div>
         <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-accent to-transparent" />
       </section>
