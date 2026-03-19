@@ -37,6 +37,10 @@ const Index = () => {
           <p className="text-center text-muted-foreground font-body mb-14 max-w-2xl mx-auto">
             Four pillars of expertise, one commitment to excellence.
           </p>
+          <blockquote className="text-center italic font-body text-muted-foreground/70 max-w-xl mx-auto mb-14">
+            <p>"And perhaps, posterity will thank me for having shown that the ancients did not know everything."</p>
+            <footer className="mt-1 text-xs not-italic text-muted-foreground/50">— Pierre de Fermat</footer>
+          </blockquote>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
