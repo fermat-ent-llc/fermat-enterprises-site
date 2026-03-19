@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -83,16 +83,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-body font-semibold text-foreground">Email</p>
-                    <p className="font-body text-muted-foreground text-sm">info@fermatenterprises.com</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded bg-secondary flex items-center justify-center flex-shrink-0">
-                    <Phone className="h-5 w-5 text-foreground" />
-                  </div>
-                  <div>
-                    <p className="font-body font-semibold text-foreground">Phone</p>
-                    <p className="font-body text-muted-foreground text-sm">(555) 123-4567</p>
+                    <p className="font-body text-muted-foreground text-sm">info@fermatenterprisesllc.xyz</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -101,7 +92,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-body font-semibold text-foreground">Office</p>
-                    <p className="font-body text-muted-foreground text-sm">123 Enterprise Boulevard<br />Suite 400<br />Business City, ST 12345</p>
+                    <p className="font-body text-muted-foreground text-sm">926 W Little Tiger Ct<br />Saratoga Springs, UT 84045</p>
                   </div>
                 </div>
               </div>

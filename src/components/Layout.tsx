@@ -80,7 +80,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               <p className="text-xs mt-1 font-body">— Pierre de Fermat, 1637</p>
             </div>
             <div className="text-center md:text-right text-sm font-body">
-              <p>© {new Date().getFullYear()} Fermat Enterprises LLC. All rights reserved.</p>
+              <p>© 2025 Fermat Enterprises LLC. All rights reserved.</p>
             </div>
           </div>
         </div>
