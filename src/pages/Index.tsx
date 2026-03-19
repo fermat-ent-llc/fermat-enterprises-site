@@ -71,6 +71,10 @@ const Index = () => {
           <p className="font-body text-primary-foreground/70 mb-8 max-w-lg mx-auto">
             Like Fermat's elegant proofs, the best solutions are precise, efficient, and enduring. Let's build yours.
           </p>
+          <blockquote className="italic font-body text-primary-foreground/50 max-w-lg mx-auto mb-8">
+            <p>"I am more satisfied with the theory of numbers than with any other of my works."</p>
+            <footer className="mt-1 text-xs not-italic text-primary-foreground/35">— Pierre de Fermat</footer>
+          </blockquote>
           <Button asChild className="bg-accent text-accent-foreground hover:bg-gold-light font-body font-semibold px-8 py-6 text-base">
             <Link to="/contact">Contact Us <ArrowRight className="ml-2 h-4 w-4" /></Link>
           </Button>
