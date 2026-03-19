@@ -39,7 +39,7 @@ const Services = () => {
             Four areas of expertise, each delivered with the precision and rigor that defines Fermat Enterprises.
           </p>
           <blockquote className="mt-6 border-l-2 border-accent pl-4 italic font-body text-primary-foreground/60 max-w-xl">
-            <p>"I have discovered a truly marvelous proof of this, which this margin is too narrow to contain."</p>
+            <p>"It is impossible to separate a cube into two cubes, or a fourth power into two fourth powers, or in general, any power higher than the second, into two like powers."</p>
             <footer className="mt-1 text-xs not-italic text-primary-foreground/40">— Pierre de Fermat, 1637</footer>
           </blockquote>
         </div>
