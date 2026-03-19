@@ -21,7 +21,7 @@ const Index = () => {
               <Button asChild className="bg-accent text-accent-foreground hover:bg-gold-light font-body font-semibold px-8 py-6 text-base">
                 <Link to="/services">Our Services <ArrowRight className="ml-2 h-4 w-4" /></Link>
               </Button>
-              <Button asChild variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground font-body px-8 py-6 text-base">
+              <Button asChild className="bg-accent text-accent-foreground hover:bg-gold-light font-body font-semibold px-8 py-6 text-base">
                 <Link to="/contact">Get in Touch</Link>
               </Button>
             </div>
