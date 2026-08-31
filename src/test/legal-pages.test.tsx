@@ -68,14 +68,25 @@ describe("legal pages are reachable from the footer", () => {
   });
 });
 
-// Guards against shipping the bracketed fill-ins to production unnoticed.
+// Guards against shipping bracketed fill-ins to production unnoticed.
 describe("placeholder audit", () => {
-  it("reports which placeholders remain", () => {
+  it("has no unfilled placeholders left", () => {
     const { container: p } = renderAt(<Privacy />);
     const { container: t } = renderAt(<Terms />);
-    const found = [...(p.textContent + t.textContent).matchAll(/\[([A-Z ]+)\]/g)]
-      .map((m) => m[1]);
-    console.log("  placeholders still present:", [...new Set(found)].join(", ") || "none");
-    expect(Array.isArray(found)).toBe(true);
+    const found = [...new Set(
+      [...(p.textContent + t.textContent).matchAll(/\[([A-Z ]+)\]/g)].map((m) => m[1])
+    )];
+    expect(found).toEqual([]);
+  });
+
+  it("uses the real contact address and jurisdiction", () => {
+    renderAt(<Privacy />);
+    expect(screen.getAllByRole("link", { name: /operations@fermatenterprisesllc\.xyz/i }).length)
+      .toBeGreaterThan(0);
+  });
+
+  it("names Utah as the governing jurisdiction", () => {
+    renderAt(<Terms />);
+    expect(screen.getByText(/laws of the State of Utah/i)).toBeInTheDocument();
   });
 });

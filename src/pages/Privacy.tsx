@@ -1,6 +1,8 @@
 import LegalPage, { LegalSection } from "@/components/LegalPage";
 
-const CONTACT = "[CONTACT EMAIL]";
+const CONTACT = (
+  <a href="mailto:operations@fermatenterprisesllc.xyz">operations@fermatenterprisesllc.xyz</a>
+);
 const ENTITY = "Fermat Enterprises LLC";
 
 const sections: LegalSection[] = [
