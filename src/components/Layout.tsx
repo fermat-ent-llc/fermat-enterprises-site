@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
@@ -10,6 +10,12 @@ const navLinks = [
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
+
+  // Without this, following a footer link lands you at the bottom of the next
+  // page, since the browser keeps scroll position across client-side routes.
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -79,6 +85,14 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               <p className="text-xs mt-1 font-body">— Pierre de Fermat, 1637</p>
             </div>
             <div className="text-center md:text-right text-sm font-body">
+              <nav className="flex justify-center md:justify-end gap-5 mb-2">
+                <Link to="/privacy" className="hover:text-accent transition-colors">
+                  Privacy Policy
+                </Link>
+                <Link to="/terms" className="hover:text-accent transition-colors">
+                  Terms of Service
+                </Link>
+              </nav>
               <p>© 2025 Fermat Enterprises LLC. All rights reserved.</p>
             </div>
           </div>
