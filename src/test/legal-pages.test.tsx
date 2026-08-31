@@ -68,6 +68,18 @@ describe("legal pages are reachable from the footer", () => {
   });
 });
 
+describe("names the application", () => {
+  it("Privacy Policy names Hermes Agent", () => {
+    renderAt(<Privacy />);
+    expect(screen.getAllByText(/hermes agent/i).length).toBeGreaterThan(0);
+  });
+
+  it("Terms names Hermes Agent", () => {
+    renderAt(<Terms />);
+    expect(screen.getAllByText(/hermes agent/i).length).toBeGreaterThan(0);
+  });
+});
+
 // Guards against shipping bracketed fill-ins to production unnoticed.
 describe("placeholder audit", () => {
   it("has no unfilled placeholders left", () => {

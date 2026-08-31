@@ -29,4 +29,10 @@ describe("homepage", () => {
       expect(screen.getByRole("heading", { level: 3, name: s })).toBeInTheDocument();
     }
   });
+
+  it("contact CTA points at a working mailto, not the removed /contact route", () => {
+    renderHome();
+    const cta = screen.getByRole("link", { name: /contact us/i });
+    expect(cta).toHaveAttribute("href", "mailto:operations@fermatenterprisesllc.xyz");
+  });
 });

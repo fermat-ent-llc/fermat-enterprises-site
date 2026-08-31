@@ -95,7 +95,9 @@ const Index = () => {
             <footer className="mt-1 text-xs not-italic text-primary-foreground/35">— Pierre de Fermat</footer>
           </blockquote>
           <Button asChild className="bg-accent text-accent-foreground hover:bg-gold-light font-body font-semibold px-8 py-6 text-base">
-            <Link to="/contact">Contact Us <ArrowRight className="ml-2 h-4 w-4" /></Link>
+            <a href="mailto:operations@fermatenterprisesllc.xyz">
+              Contact Us <ArrowRight className="ml-2 h-4 w-4" />
+            </a>
           </Button>
         </div>
       </section>

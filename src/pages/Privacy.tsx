@@ -12,10 +12,11 @@ const sections: LegalSection[] = [
       <>
         <p>
           {ENTITY} ("we," "us," or "our") provides consulting, information
-          technology, property management, and real estate services. This Privacy
-          Policy explains how we collect, use, disclose, and safeguard information
-          when you visit fermatenterprisesllc.xyz or use any application or service
-          we operate (together, the "Services").
+          technology, property management, and real estate services, and develops{" "}
+          <strong>Hermes Agent</strong>, our software product. This Privacy Policy
+          explains how we collect, use, disclose, and safeguard information when you
+          visit fermatenterprisesllc.xyz or use Hermes Agent or any other application
+          or service we operate (together, the "Services").
         </p>
         <p>
           By using the Services you agree to the practices described here. If you do
