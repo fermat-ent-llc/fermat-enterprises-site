@@ -64,6 +64,25 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Product */}
+      <section className="py-16 bg-secondary/40 border-y border-border">
+        <div className="container mx-auto px-4 md:px-8">
+          <div className="max-w-2xl mx-auto text-center">
+            <p className="font-body text-xs uppercase tracking-widest text-accent mb-3">
+              Our Product
+            </p>
+            <h2 className="font-heading text-3xl md:text-4xl font-semibold text-foreground mb-4">
+              Hermes Agent
+            </h2>
+            <p className="font-body text-muted-foreground leading-relaxed">
+              Alongside our four service areas, we develop{" "}
+              <strong className="text-foreground font-semibold">Hermes Agent</strong> — offered
+              both as a service and as a product for our clients and customers.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="bg-primary text-primary-foreground py-16">
         <div className="container mx-auto px-4 md:px-8 text-center">
