@@ -78,6 +78,18 @@ describe("names the application", () => {
     renderAt(<Terms />);
     expect(screen.getAllByText(/hermes agent/i).length).toBeGreaterThan(0);
   });
+
+  it("both documents describe what Hermes Agent does", () => {
+    const { container: p } = renderAt(<Privacy />);
+    expect(p.textContent).toMatch(/business personal assistant/i);
+    const { container: t } = renderAt(<Terms />);
+    expect(t.textContent).toMatch(/business personal assistant/i);
+  });
+
+  it("Privacy explains what Hermes Agent processes", () => {
+    const { container } = renderAt(<Privacy />);
+    expect(container.textContent).toMatch(/processes the business information, documents, and instructions/i);
+  });
 });
 
 // Guards against shipping bracketed fill-ins to production unnoticed.

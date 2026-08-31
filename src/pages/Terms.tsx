@@ -42,10 +42,12 @@ const sections: LegalSection[] = [
       <>
         <p>
           {ENTITY} provides consulting, information technology, property management,
-          and real estate services, and develops <strong>Hermes Agent</strong>, which
-          we offer both as a service and as a product to clients and customers. The
-          website and any associated applications provide information about, and
-          access to, those offerings.
+          and real estate services, and develops <strong>Hermes Agent</strong>, a
+          business personal assistant that handles everyday business processes and
+          automates the routine work behind them. We offer Hermes Agent both as a
+          service and as a product to clients and customers. The website and any
+          associated applications provide information about, and access to, those
+          offerings.
         </p>
         <p>
           Content presented through the Services is provided for general informational

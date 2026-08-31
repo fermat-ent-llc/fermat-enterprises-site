@@ -13,7 +13,8 @@ const sections: LegalSection[] = [
         <p>
           {ENTITY} ("we," "us," or "our") provides consulting, information
           technology, property management, and real estate services, and develops{" "}
-          <strong>Hermes Agent</strong>, our software product. This Privacy Policy
+          <strong>Hermes Agent</strong>, a business personal assistant that handles
+          and automates routine business processes. This Privacy Policy
           explains how we collect, use, disclose, and safeguard information when you
           visit fermatenterprisesllc.xyz or use Hermes Agent or any other application
           or service we operate (together, the "Services").
@@ -36,6 +37,12 @@ const sections: LegalSection[] = [
           <li>Account credentials, where an application requires you to register.</li>
           <li>The contents of messages, forms, and correspondence you send to us.</li>
         </ul>
+        <p>
+          When you use <strong>Hermes Agent</strong>, it processes the business
+          information, documents, and instructions you provide or direct it to access
+          in order to carry out the tasks you ask of it. You control what it is given
+          access to.
+        </p>
         <p>
           <strong>Note:</strong> We do not intentionally collect sensitive personal
           information (such as government identifiers, health, or biometric data)

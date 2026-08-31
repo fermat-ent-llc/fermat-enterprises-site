@@ -76,8 +76,10 @@ const Index = () => {
             </h2>
             <p className="font-body text-muted-foreground leading-relaxed">
               Alongside our four service areas, we develop{" "}
-              <strong className="text-foreground font-semibold">Hermes Agent</strong> — offered
-              both as a service and as a product for our clients and customers.
+              <strong className="text-foreground font-semibold">Hermes Agent</strong> — a business
+              personal assistant that handles everyday business processes and automates the
+              routine work behind them. We offer it both as a service and as a product for our
+              clients and customers.
             </p>
           </div>
         </div>

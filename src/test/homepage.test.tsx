@@ -23,6 +23,12 @@ describe("homepage", () => {
     ).toBeInTheDocument();
   });
 
+  it("describes Hermes Agent as a business assistant that automates processes", () => {
+    renderHome();
+    expect(screen.getByText(/business\s+personal assistant/i)).toBeInTheDocument();
+    expect(screen.getByText(/automates the\s+routine work/i)).toBeInTheDocument();
+  });
+
   it("still lists the four service areas", () => {
     renderHome();
     for (const s of [/consulting/i, /it technology/i, /property management/i, /real estate/i]) {
